@@ -5,14 +5,14 @@ export const navLinks = [
   },
   {
     id: "services",
-    title: "Services",
+    title: "Serviços",
   },
   {
     id: "team",
-    title: "Team",
+    title: "Time",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contato",
   },
 ];

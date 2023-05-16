@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`lg:px-14 px-3 lg:py-6 py-2 w-full flex items-center fixed top-0 z-20`}
+      className='sm:px-16 px-6 sm:py-6 py-2 w-full flex items-center fixed top-0 z-[9999] bg-white'
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <img src={logo} alt="logo" className="object-contain w-fit h-16" />
@@ -21,8 +21,8 @@ const Navbar = () => {
             <li
               key={item.id}
               className={`${
-                active === item.title ? "text-neutral-500" : "text-secondary"
-              } hover:text-neutral-500 text-[18px] font-medium cursor-pointer`}
+                active === item.title ? "text-neutral-500" : "text-black"
+              } hover:text-neutral-500 text-[20px] font-medium cursor-pointer`}
               onClick={() => setActive(item.title)}
             >
               <a href={`#${item.id}`}>{item.title}</a>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-10 -right-5 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-white absolute top-14 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex flex-col gap-4 justify-end items-start">
               {navLinks.map((item) => (
@@ -54,7 +54,7 @@ const Navbar = () => {
                   className={`${
                     active === item.title
                       ? "text-neutral-500"
-                      : "text-secondary"
+                      : "text-black"
                   } text-[16px] font-medium cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);

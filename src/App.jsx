@@ -4,8 +4,8 @@ function App() {
 
   return (
     <div className='relative'>
-        <Navbar />
-        <Hero />
+      <Navbar />
+      <Hero />
       <About />
       <Services />
       <Team />
