@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { navLinks } from "../constants";
-import close from "../assets/close.svg";
-import menu from "../assets/menu.svg";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
@@ -15,7 +13,7 @@ const Navbar = () => {
       className='sm:px-16 px-6 sm:py-6 py-2 w-full flex items-center fixed top-0 z-[9999] bg-white'
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <img src={logo} alt="logo" className="object-contain w-fit h-16" />
+        <a href="#"><img src={logo} alt="logo" className="object-contain w-fit h-16 cursor-pointer" /></a>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((item) => (
             <li
