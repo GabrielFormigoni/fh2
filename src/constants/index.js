@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     id: "about",
-    title: "Conheça a empresa",
+    title: "Sobre nós",
   },
   {
     id: "services",
