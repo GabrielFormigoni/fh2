@@ -13,14 +13,14 @@ const Navbar = () => {
       className='sm:px-16 px-6 sm:py-6 py-2 w-full flex items-center fixed top-0 z-[9999] bg-white'
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <a href="#"><img src={logo} alt="logo" className="object-contain w-fit h-16 cursor-pointer" /></a>
+        <a href="#"><img src={logo} alt="logo" className="object-contain w-fit h-20 cursor-pointer" /></a>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((item) => (
             <li
               key={item.id}
               className={`${
-                active === item.title ? "text-neutral-500" : "text-black"
-              } hover:text-neutral-500 text-[20px] font-medium cursor-pointer`}
+                active === item.title ? "text-black font-bold" : "text-neutral-600 font-medium"
+              } hover:text-black text-[20px] cursor-pointer`}
               onClick={() => setActive(item.title)}
             >
               <a href={`#${item.id}`}>{item.title}</a>
@@ -51,8 +51,8 @@ const Navbar = () => {
                   key={item.id}
                   className={`${
                     active === item.title
-                      ? "text-neutral-500"
-                      : "text-black"
+                      ? "text-black"
+                      : "text-neutral-900"
                   } text-[16px] font-medium cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);

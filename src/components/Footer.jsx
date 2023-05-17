@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='font-poppins text-center text-[18px] leading-[27px] py-10'>
+      <small>Copyright Ⓒ FH2 Business. All Rights Reserved</small>
+    </div>
   )
 }
 
