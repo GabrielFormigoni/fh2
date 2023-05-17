@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className='sm:px-16 px-4 sm:py-6 py-2 w-full flex items-center fixed top-0 z-[9999] bg-white'
+      className='sm:px-14 px-4 sm:py-3 py-2 w-full flex items-center fixed top-0 z-[9999] bg-black-100'
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <a href="#"><img src={logo} alt="logo" className="object-contain w-fit sm:h-20 h-12 cursor-pointer" /></a>
@@ -19,8 +19,8 @@ const Navbar = () => {
             <li
               key={item.id}
               className={`${
-                active === item.title ? "text-black font-bold" : "text-neutral-600 font-medium"
-              } hover:text-black md:text-[20px] text-[16px] cursor-pointer`}
+                active === item.title ? "text-white" : "text-secondary font-medium"
+              } hover:text-white md:text-[20px] text-[16px] cursor-pointer`}
               onClick={() => setActive(item.title)}
             >
               <a href={`#${item.id}`}>{item.title}</a>
@@ -31,12 +31,12 @@ const Navbar = () => {
         <div className="sm:hidden flex justify-end items-center">
           {toggle ? (
             <AiOutlineCloseCircle
-              className="w-[28px] h-[28px] object-contain cursor-pointer text-black"
+              className="w-[28px] h-[28px] object-contain cursor-pointer text-white"
               onClick={() => setToggle(!toggle)}
             />
           ) : (
             <BiMenuAltRight
-              className="w-[28px] h-[28px] object-contain cursor-pointer text-black"
+              className="w-[28px] h-[28px] object-contain cursor-pointer text-white"
               onClick={() => setToggle(!toggle)}
             />
           )}

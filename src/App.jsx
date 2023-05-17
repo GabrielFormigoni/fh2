@@ -1,13 +1,14 @@
-import { About, Contact, Footer, Hero, Navbar, Services, Team } from './components'
+import { About, Contact, Footer, Hero, Navbar, Services, Team, Testimonials } from './components'
 
 function App() {
 
   return (
-    <div className='relative'>
+    <div className='relative bg-black'>
       <Navbar />
       <Hero />
       <About />
       <Services />
+      <Testimonials />
       <Team />
       <Contact />
       <Footer />
