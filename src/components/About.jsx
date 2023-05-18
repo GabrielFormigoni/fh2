@@ -3,16 +3,23 @@ import { SectionWrapper } from '../hoc'
 
 const About = () => {
   return (
-    <div id='about' className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:flex-row gap-3'>
-      <div className='flex-1'>
+    <div id='about' className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:gap-12 gap-6'>
+      <div>
         <h1 className='text-white font-black md:text-[35px] text-[30px]'>O que é a FH2 Business?</h1>
-        <div className='h-1 w-20 bg-white rounded-md my-2' />
-        <p className='sm:text-[18px] text-[14px] text-secondary tracking-wider'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet, corrupti nam fugit, libero illum nobis nesciunt iure sint officia nihil laborum corporis dicta quidem doloribus ullam pariatur impedit eos.</p>
+        <div className='h-1 w-20 bg-white rounded-md mb-4' />
+        <p className='sm:text-[18px] text-[14px] text-secondary tracking-wider'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet, corrupti nam fugit, libero illum nobis nesciunt iure sint officia nihil laborum corporis dicta quidem doloribus ullam pariatur impedit eos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt placeat fugiat omnis, nulla beatae modi ipsam? Provident assumenda odio quas asperiores ex neque quis maxime aperiam magnam deserunt! Quia, accusamus!</p>
       </div>
-      <div className='flex-1'>
-        <h1 className='text-white font-black md:text-[35px] text-[30px]'>O que nós fazemos ?</h1>
-        <div className='h-1 w-20 bg-white rounded-md my-2' />
-        <p className='sm:text-[18px] text-[14px] text-secondary tracking-wider'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet, corrupti nam fugit, libero illum nobis nesciunt iure sint officia nihil laborum corporis dicta quidem doloribus ullam pariatur impedit eos.</p>
+      <div className='flex gap-6 flex-col md:flex-row'>
+        <div className='flex-1'>
+          <h1 className='text-white font-black md:text-[35px] text-[30px]'>Como nós trabalhamos?</h1>
+          <div className='h-1 w-20 bg-white rounded-md mb-4' />
+          <p className='sm:text-[18px] text-[14px] text-secondary tracking-wider'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet, corrupti nam fugit, libero illum nobis nesciunt iure sint officia nihil laborum corporis dicta quidem doloribus ullam pariatur impedit eos.</p>
+        </div>
+        <div className='flex-1'>
+          <h1 className='text-white font-black md:text-[35px] text-[30px]'>O que nós fazemos?</h1>
+          <div className='h-1 w-20 bg-white rounded-md mb-4' />
+          <p className='sm:text-[18px] text-[14px] text-secondary tracking-wider'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet, corrupti nam fugit, libero illum nobis nesciunt iure sint officia nihil laborum corporis dicta quidem doloribus ullam pariatur impedit eos.</p>
+        </div>
       </div>
     </div>
   )
