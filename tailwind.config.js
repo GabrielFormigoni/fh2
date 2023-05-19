@@ -14,6 +14,9 @@ export default {
       screens: {
         xs: "450px",
       },
+      fontFamily: {
+        exo: "Eudoxus Sans",
+      },
     },
   },
   plugins: [],

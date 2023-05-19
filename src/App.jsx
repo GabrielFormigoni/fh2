@@ -3,7 +3,7 @@ import { About, Contact, Footer, Hero, Navbar, Services, Team, Testimonials } fr
 function App() {
 
   return (
-    <div className='relative bg-black'>
+    <div className='relative bg-black-100 bg-opacity-95'>
       <Navbar />
       <Hero />
       <About />

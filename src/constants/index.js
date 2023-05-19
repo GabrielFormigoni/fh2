@@ -68,7 +68,6 @@ export const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Job IT",
@@ -89,7 +88,6 @@ export const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Trip Guide",
@@ -110,6 +108,28 @@ export const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+  },
+];
+
+export const team = [
+  {
+    name: "Fernanda",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    name: "Roberto",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    name: "Sara",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    name: "Thomas",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
 ];
