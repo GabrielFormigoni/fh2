@@ -3,7 +3,7 @@ import { SectionWrapper } from '../hoc'
 
 const About = () => {
   return (
-    <div id='about' className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:gap-12 gap-6'>
+    <div className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:gap-12 gap-6'>
       <div>
         <h1 className='text-white font-black md:text-[35px] text-[30px]'>O que é a FH2 Business?</h1>
         <div className='h-1 w-20 bg-white rounded-md mb-4' />
@@ -25,4 +25,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, '')
+export default SectionWrapper(About, 'about')
