@@ -61,13 +61,15 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      id="contact"
-      className={`px-6 md:px-24 sm:py-16 py-10 md:py-16 flex xl:flex-row flex-col gap-10 overflow-hidden relative`}
+      className='px-6 md:px-24 sm:py-16 py-10 flex xl:flex-row flex-col gap-10 overflow-hidden relative my-[50px]'
     >
-      <div className="absolute top-1/4 left-0 w-full bg-black-100 bg-opacity-80 h-[500px] z-0 hidden xl:block" />
+      <span className='hash-span' id="contact">
+          &nbsp;
+      </span>
+      <div className="absolute top-[20%] left-0 w-full bg-black-100 bg-opacity-80 h-[580px] z-0 hidden xl:block" />
       <motion.div
         variants={slideIn("left", "tween", 0.1, 1)}
-        className="flex-1 bg-black-100 p-8 rounded-2xl z-[9999] shadow-xl shadow-primary"
+        className="flex-1 bg-black-100 p-8 rounded-2xl z-[20] shadow-xl shadow-primary"
       >
         <p className={styles.sectionSubText}>Mande uma mensagem</p>
         <h2 className={styles.sectionHeadText}>Contato.</h2>
@@ -122,7 +124,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 flex flex-col gap-20 text-white justify-center lg:ml-56"
+        className="xl:flex-1 flex flex-col gap-20 text-white justify-center xl:ml-56 ml-5 mt-10 xl:mt-0"
       >
         <div className="flex flex-col gap-3">
           <div className="flex gap-4 items-center">
@@ -145,8 +147,8 @@ const Contact = () => {
           </div>
           <p className="lg:text-lg text-sm">Mon – Fri …… 10 am – 8 pm, Sat, Sun ....… Closed</p>
         </div>
-        
       </motion.div>
+
     </motion.div>
   );
 };

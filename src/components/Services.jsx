@@ -48,8 +48,11 @@ const Services = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      id="services" 
-      className='bg-black-100 w-full flex flex-col md:px-20 px-6 py-20'>
+      className='bg-black-100 w-full flex flex-col md:px-20 px-6 py-20 bg-opacity-80'>
+
+      <span className='hash-span' id="services" >
+          &nbsp;
+      </span>
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>O que nós fazemos?</p>
         <h2 className={styles.sectionHeadText}>Serviços.</h2>

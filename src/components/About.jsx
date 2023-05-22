@@ -8,7 +8,7 @@ const About = () => {
   return (
     <motion.div
       variants={fadeIn("", "", 0.1, 1)}
-      className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:gap-12 gap-6'
+      className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:gap-12 gap-6 mb-[100px]'
     >
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>Conheça a nossa história</p>

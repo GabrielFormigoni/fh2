@@ -30,7 +30,7 @@ const TestimonialCard = ({ index, testimonial, name, designation, company, image
 )
 const Testimonials = () => {
   return (
-    <div className='mt-12 bg-black-100 rounded-[20px]'>
+    <div className='my-12 bg-black-100 rounded-[20px]'>
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <motion.div
           variants={textVariant}
