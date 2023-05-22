@@ -3,7 +3,7 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { textVariant, fadeIn } from '../utils/motion'
+import { textVariant, fadeIn, staggerContainer } from '../utils/motion'
 import { projects } from '../constants'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
@@ -43,7 +43,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
 const Services = () => {
   return (
-    <section id="services" className='bg-black-100 w-full flex flex-col md:px-20 px-6 py-20'>
+    <motion.section
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      id="services" 
+      className='bg-black-100 w-full flex flex-col md:px-20 px-6 py-20'>
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>O que nós fazemos?</p>
         <h2 className={styles.sectionHeadText}>Serviços.</h2>
@@ -65,7 +71,7 @@ const Services = () => {
         ))}
       </div>
 
-    </section>
+    </motion.section>
   )
 }
 

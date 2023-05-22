@@ -1,14 +1,20 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { fadeIn, textVariant } from '../utils/motion'
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
 import { team } from '../constants'
 
 const Team = () => {
   return (
-    <div id='team' className='bg-black-100 w-full flex flex-col md:px-20 px-6 py-20'>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      id='team' 
+      className='bg-black-100 w-full flex flex-col md:px-20 px-6 py-20'>
       <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}>Qual é a nossa equipe?</p>
+        <p className={styles.sectionSubText}>Qual nós somos?</p>
         <h2 className={styles.sectionHeadText}>Time.</h2>
       </motion.div>
 
@@ -32,7 +38,7 @@ const Team = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

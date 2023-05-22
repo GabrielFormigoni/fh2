@@ -1,9 +1,19 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { SectionWrapper } from '../hoc'
+import { fadeIn, textVariant } from '../utils/motion'
+import { styles } from '../styles'
 
 const About = () => {
   return (
-    <div className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:gap-12 gap-6'>
+    <motion.div
+      variants={fadeIn("", "", 0.1, 1)}
+      className='sm:px-16 px-6 sm:py-16 py-10 mt-8 bg-tertiary rounded-2xl flex flex-col md:gap-12 gap-6'
+    >
+      <motion.div variants={textVariant}>
+        <p className={styles.sectionSubText}>Conheça a nossa história</p>
+        <h2 className={styles.sectionHeadText}>Sobre nós.</h2>
+      </motion.div>
       <div>
         <h1 className='text-white font-black md:text-[35px] text-[30px]'>O que é a FH2 Business?</h1>
         <div className='h-1 w-20 bg-white rounded-md mb-4' />
@@ -21,7 +31,7 @@ const About = () => {
           <p className='sm:text-[18px] text-[14px] text-secondary tracking-wider'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet, corrupti nam fugit, libero illum nobis nesciunt iure sint officia nihil laborum corporis dicta quidem doloribus ullam pariatur impedit eos.</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

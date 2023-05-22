@@ -36,7 +36,7 @@ const Testimonials = () => {
           variants={textVariant}
         >
           <p className={styles.sectionSubText}>O que os outros dizem</p>
-          <h2 className={styles.sectionHeadText}>Testemunhas.</h2>
+          <h2 className={styles.sectionHeadText}>Depoimentos.</h2>
         </motion.div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap justify-center gap-7`}>

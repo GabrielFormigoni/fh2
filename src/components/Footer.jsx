@@ -4,7 +4,7 @@ import { BsFacebook, BsTwitter, BsLinkedin, BsInstagram } from 'react-icons/bs'
 
 const Footer = () => {
   return (
-    <div className='font-poppins pb-8 pt-4 flex justify-between items-center text-white text-[18px]  gap-6 px-8 md:flex-row flex-col'>
+    <div className='font-poppins py-10 flex justify-between items-center text-white text-[18px]  gap-6 px-8 md:flex-row flex-col bg-black-100'>
       <img src={logo} alt="logo" className="object-contain w-24 md:h-20 h-12 cursor-pointer hidden md:block" />
       <small>Copyright Ⓒ FH2 Business. All Rights Reserved</small>
       <div className="flex gap-8 items-center">
